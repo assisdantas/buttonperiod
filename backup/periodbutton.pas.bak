@@ -17,7 +17,6 @@ type
     ptSemanaAnterior,
     ptSeparator2,      // Separador
     ptUltimos15Dias,
-    ptSeparator3,      // Separador
     ptMesAtual,
     ptMesAnterior,
     ptSeparator4,      // Separador
@@ -83,7 +82,9 @@ end;
 constructor TPeriodButton.Create(AOwner: TComponent);
 begin
   inherited Create(AOwner);
-  Caption := 'Period';
+  Caption := '';
+  Width := 25;
+  Heigth := 25;
 
   FPopupMenu := TPopupMenu.Create(Self);
   CreateMenuItems;

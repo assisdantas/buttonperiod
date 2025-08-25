@@ -82,7 +82,9 @@ end;
 constructor TPeriodButton.Create(AOwner: TComponent);
 begin
   inherited Create(AOwner);
-  Caption := 'Period';
+  Caption := '';
+  Width := 25;
+  Height := 25;
 
   FPopupMenu := TPopupMenu.Create(Self);
   CreateMenuItems;
